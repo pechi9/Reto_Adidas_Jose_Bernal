@@ -23,7 +23,7 @@ export default function App() {
   const [loadError, setLoadError] = useState("");
 
   const [view, setView] = useState("list");
-  const [filters, setFilters] = useState({ q: "", market: "", status: "", sort: "date" });
+  const [filters, setFilters] = useState({ q: "", market: "", status: "", sort: "date", from: "", to: "" });
 
   const [selectedId, setSelectedId] = useState(null);
   const [formOpen, setFormOpen] = useState(false);
