@@ -1,4 +1,4 @@
-import { LayoutList, Rocket, Search, SlidersHorizontal, Plus } from "lucide-react";
+import { LayoutList, Rocket, Search, SlidersHorizontal, Plus, CalendarRange } from "lucide-react";
 import RoleSwitch from "./RoleSwitch.jsx";
 import { STATE_ORDER, STATE_META } from "../lib/states";
 
@@ -86,6 +86,35 @@ export default function TopBar({
               </option>
             ))}
           </select>
+
+          {/* Filtro por rango de fechas */}
+          <div className="flex items-center gap-1.5 rounded-lg border border-ink-600 bg-ink-800 px-2.5 py-1.5">
+            <CalendarRange size={13} className="shrink-0 text-mist-400" />
+            <input
+              type="date"
+              value={filters.from}
+              onChange={(e) => onFiltersChange({ ...filters, from: e.target.value })}
+              className="w-[124px] bg-transparent font-mono text-xs text-mist-50 [color-scheme:dark] focus:outline-none"
+              title="Fecha de lanzamiento desde"
+            />
+            <span className="text-xs text-mist-400">–</span>
+            <input
+              type="date"
+              value={filters.to}
+              onChange={(e) => onFiltersChange({ ...filters, to: e.target.value })}
+              className="w-[124px] bg-transparent font-mono text-xs text-mist-50 [color-scheme:dark] focus:outline-none"
+              title="Fecha de lanzamiento hasta"
+            />
+            {(filters.from || filters.to) && (
+              <button
+                onClick={() => onFiltersChange({ ...filters, from: "", to: "" })}
+                className="ml-0.5 text-mist-400 hover:text-signal-red"
+                title="Limpiar rango de fechas"
+              >
+                ×
+              </button>
+            )}
+          </div>
 
           <button
             onClick={() =>
