@@ -1,1 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+@layer base {
+  html,
+  body {
+    @apply bg-ink-900 text-mist-50 font-body antialiased;
+  }
+
+  ::selection {
+    @apply bg-signal-amber/30 text-mist-50;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #2a3348 transparent;
+  }
+
+  :focus-visible {
+    outline: 2px solid #e8a23d;
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+}
