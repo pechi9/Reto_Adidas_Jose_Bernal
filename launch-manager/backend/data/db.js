@@ -1,16 +1,6 @@
 const { nanoid } = require("nanoid");
 const { STATES } = require("../utils/stateMachine");
 
-/**
- * Modelo de datos relacional simulado en memoria:
- *
- *   launches (1) ──< assets (N)          -- assets.launchId -> launches.id
- *   launches (1) ──< status_history (N)  -- statusHistory.launchId -> launches.id
- *
- * En una versión productiva esto sería PostgreSQL con FKs reales;
- * aquí se modela igual para que el traspaso a SQL sea directo.
- */
-
 const launches = new Map();
 const assets = new Map();
 const statusHistory = new Map();
@@ -58,7 +48,6 @@ function seedLaunch({ name, market, launchDate, status, owner, assetsData, histo
   return id;
 }
 
-// --- Datos semilla ---
 seedLaunch({
   name: "Aurora Wireless Earbuds",
   market: "México",
