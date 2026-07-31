@@ -86,7 +86,7 @@ export default function LaunchFormModal({ initial, onClose, onSubmit, busy, erro
           </button>
           <button
             disabled={busy}
-            className="rounded-lg bg-signal-amber px-3.5 py-2 text-xs font-semibold text-ink-950 disabled:opacity-50"
+            className="rounded-lg bg-signal-amber px-3.5 py-2 text-xs font-semibold text-mist-50 disabled:opacity-50"
           >
             {isEdit ? "Guardar cambios" : "Crear lanzamiento"}
           </button>
@@ -96,13 +96,13 @@ export default function LaunchFormModal({ initial, onClose, onSubmit, busy, erro
           .input {
             width: 100%;
             border-radius: 0.5rem;
-            border: 1px solid #2A3348;
-            background: #0F1420;
+            border: 1px solid #4C2A87;
+            background: #240046;
             padding: 0.55rem 0.7rem;
             font-size: 0.8rem;
-            color: #EDEFF4;
+            color: #F5F1FB;
           }
-          .input:focus { outline: none; border-color: rgba(232,162,61,0.6); }
+          .input:focus { outline: none; border-color: rgba(142,29,193,0.6); }
         `}</style>
       </form>
     </div>

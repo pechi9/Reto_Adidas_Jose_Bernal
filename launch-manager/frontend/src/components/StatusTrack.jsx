@@ -20,7 +20,7 @@ export default function StatusTrack({ status, compact = false }) {
             title={meta.label}
             className={`rounded-full transition-all ${compact ? "h-1 w-4" : "h-1.5 w-6"} ${
               isCurrent
-                ? `${meta.dot} shadow-[0_0_8px_rgba(232,162,61,0.5)]`
+                ? `${meta.dot} shadow-[0_0_8px_rgba(142,29,193,0.5)]`
                 : isPast
                 ? `${meta.dot} opacity-40`
                 : "bg-ink-600"
