@@ -5,28 +5,29 @@ export default {
     extend: {
       colors: {
         ink: {
-          950: "#0B0F18",
-          900: "#0F1420",
-          800: "#171E2E",
-          700: "#1D2537",
-          600: "#2A3348",
-          500: "#3A4560",
+          950: "#170030",
+          900: "#240046",
+          800: "#300A5C",
+          700: "#3C1870",
+          600: "#4D2C86",
+          500: "#5F3F9D",
         },
         mist: {
-          400: "#8A93AB",
-          200: "#C7CDDC",
-          50: "#EDEFF4",
+          400: "#A99BC7",
+          200: "#DDD6EE",
+          50: "#F6F3FB",
         },
         signal: {
-          amber: "#E8A23D",
-          amberSoft: "#3A2E1C",
-          green: "#34D399",
-          greenSoft: "#173229",
-          greenDeep: "#0EA5A0",
-          red: "#F0616B",
-          redSoft: "#3A1E22",
-          slate: "#7C8AA5",
-          slateSoft: "#232B3D",
+          amber: "#8E1DC1",       // acento principal / "en revisión"
+          amberSoft: "#341446",   // fondo chip (derivado, oscurecido)
+          green: "#33B200",
+          greenSoft: "#132E0A",
+          greenDeep: "#008CB2",   // "publicado"
+          greenDeepSoft: "#0A2C36",
+          red: "#A71900",
+          redSoft: "#33100A",
+          slate: "#7500A8",       // "borrador"
+          slateSoft: "#2A1240",
         },
       },
       fontFamily: {
