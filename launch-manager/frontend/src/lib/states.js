@@ -23,7 +23,7 @@ export const STATE_META = {
     label: "Publicado",
     dot: "bg-signal-greenDeep",
     text: "text-signal-greenDeep",
-    chip: "bg-signal-greenSoft text-signal-greenDeep border-signal-greenDeep/30",
+    chip: "bg-signal-greenDeepSoft text-signal-greenDeep border-signal-greenDeep/30",
   },
 };
 
