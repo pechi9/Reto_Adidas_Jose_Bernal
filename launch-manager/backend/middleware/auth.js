@@ -1,10 +1,4 @@
-/**
- * Autenticación simplificada para la demo: el rol y el nombre del usuario
- * viajan en headers (en un sistema real vendrían de un JWT / sesión).
- *
- *   x-user-role: "creador" | "aprobador"
- *   x-user-name: string
- */
+
 const VALID_ROLES = ["creador", "aprobador"];
 
 function identify(req, res, next) {
