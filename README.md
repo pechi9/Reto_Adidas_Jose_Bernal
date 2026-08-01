@@ -1,6 +1,6 @@
 # Torre de Control — Product Launch Management Dashboard
 
-Link:
+Link: https://youtu.be/GgUNubnxlB8
 
 This is my submission for **Reto 2** of the ENGLOBE_CONNECT selection process: a tool for a marketing team to create product launches and move them through a four-stage approval flow, with a list view, a timeline ("Runway") view, and a detail view that all stay in sync.
 
